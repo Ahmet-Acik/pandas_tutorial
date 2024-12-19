@@ -17,17 +17,17 @@ df = pd.DataFrame(data, index=['x', 'y', 'z'])
 print("\nDataFrame:")
 print(df)
 
-# # Reading data from a CSV file 
-# cs_csv_file_path = './warm_up_data/coffee_sales.csv'
-# df_csv = pd.read_csv(cs_csv_file_path)
-# print("\nDataFrame from CSV:")
-# print(df_csv.head())
+# Reading data from a CSV file 
+cs_csv_file_path = './warm_up_data/coffee_sales.csv'
+df_csv = pd.read_csv(cs_csv_file_path)
+print("\nDataFrame from CSV:")
+print(df_csv.head())
 
-# # Reading data from an Excel file 
-# excel_file_path = './data/coffee_shop_sales.xlsx'
-# df_excel = pd.read_excel(excel_file_path)
-# print("\nDataFrame from Excel:")
-# print(df_excel.head())
+# Reading data from an Excel file 
+excel_file_path = './data/coffee_shop_sales.xlsx'
+df_excel = pd.read_excel(excel_file_path)
+print("\nDataFrame from Excel:")
+print(df_excel.head())
 
 # Displaying information about the DataFrame
 print("\nDataFrame Info:")
@@ -73,32 +73,35 @@ print(df.fillna(0))
 print("\nGrouped Data (sum):")
 print(df.groupby('A').sum())
 
-# # Merging DataFrames (example with dummy data)
-# df1 = pd.DataFrame({'key': ['A', 'B', 'C'], 'value': [1, 2, 3]})
-# df2 = pd.DataFrame({'key': ['A', 'B', 'D'], 'value': [4, 5, 6]})
-# merged_df = pd.merge(df1, df2, on='key', how='outer')
-# print("\nMerged DataFrame:")
-# print(merged_df)
+# Merging DataFrames (example with dummy data)
+df1 = pd.DataFrame({'key': ['A', 'B', 'C'], 'value': [1, 2, 3]})
+df2 = pd.DataFrame({'key': ['A', 'B', 'D'], 'value': [4, 5, 6]})
+merged_df = pd.merge(df1, df2, on='key', how='outer')
+print("\nMerged DataFrame:")
+print(merged_df)
 
-# # Joining DataFrames (example with dummy data)
-# df1 = pd.DataFrame({'key': ['A', 'B', 'C'], 'value1': [1, 2, 3]}).set_index('key')
-# df2 = pd.DataFrame({'key': ['A', 'B', 'D'], 'value2': [4, 5, 6]}).set_index('key')
-# joined_df = df1.join(df2, how='outer')
-# print("\nJoined DataFrame:")
-# print(joined_df)
+# Joining DataFrames (example with dummy data)
+df1 = pd.DataFrame({'key': ['A', 'B', 'C'], 'value1': [1, 2, 3]}).set_index('key')
+df2 = pd.DataFrame({'key': ['A', 'B', 'D'], 'value2': [4, 5, 6]}).set_index('key')
+joined_df = df1.join(df2, how='outer')
+print("\nJoined DataFrame:")
+print(joined_df)
 
-# # Pivoting data (example with dummy data)
-# pivot_data = {
-#     'A': ['foo', 'foo', 'foo', 'bar', 'bar', 'bar'],
-#     'B': ['one', 'one', 'two', 'two', 'one', 'one'],
-#     'C': [1, 2, 3, 4, 5, 6]
-# }
-# df_pivot = pd.DataFrame(pivot_data)
-# pivoted_df = df_pivot.pivot(index='A', columns='B', values='C')
-# print("\nPivoted DataFrame:")
-# print(pivoted_df)
+# Pivoting data (example with dummy data)
+pivot_data = {
+    'A': ['foo', 'foo', 'foo', 'bar', 'bar', 'bar'],
+    'B': ['one', 'one', 'two', 'two', 'one', 'one'],
+    'C': [1, 2, 3, 4, 5, 6]
+}
+df_pivot = pd.DataFrame(pivot_data)
+pivoted_df = df_pivot.pivot(index='A', columns='B', values='C')
+print("\nPivoted DataFrame:")
+print(pivoted_df)
 
-# # Melting data (example with dummy data)
-# melted_df = pd.melt(df_pivot.reset_index(), id_vars=['A'], value_vars=['one', 'two'])
-# print("\nMelted DataFrame:")
-# print(melted_df)
+# Melting data (example with dummy data)
+melted_df = pd.melt(df_pivot.reset_index(), id_vars=['A'], value_vars=['one', 'two'])
+print("\nMelted DataFrame:")
+print(melted_df)
+
+
+
