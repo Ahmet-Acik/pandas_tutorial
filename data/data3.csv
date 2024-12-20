@@ -1,0 +1,12 @@
+filepath: data.csv
+id,name,age,department,salary,years_experience,performance_score
+1,John Doe,28,Engineering,70000,5,88
+2,Jane Smith,34,Marketing,80000,10,92
+3,Emily Davis,22,Sales,45000,1,75
+4,Michael Brown,45,HR,60000,20,85
+5,Jessica Wilson,30,Engineering,75000,7,90
+6,Daniel Martinez,40,Marketing,85000,15,95
+7,Laura Garcia,29,Sales,50000,3,80
+8,James Anderson,50,HR,65000,25,70
+9,Robert Johnson,38,Engineering,72000,12,89
+10,Linda Martinez,27,Marketing,78000,4,93
