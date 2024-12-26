@@ -152,6 +152,14 @@ print(df.head())
 print("\nLast few rows of the DataFrame:")
 print(df.tail())
 
+# Displaying the shape of the DataFrame
+print("\nShape of the DataFrame:")
+print(df.shape)
+
+# Displaying the column names of the DataFrame
+print("\nColumn names of the DataFrame:")
+print(df.columns)
+
 
 
 
