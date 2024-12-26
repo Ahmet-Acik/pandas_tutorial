@@ -144,6 +144,17 @@ df.to_csv('./output_data/output.csv', index=False)
 # Saving DataFrame to an Excel file
 df.to_excel('./output_data/output.xlsx', index=False)
 
+# Displaying the first few rows of the DataFrame
+print("\nFirst few rows of the DataFrame:")
+print(df.head())
+
+# Displaying the last few rows of the DataFrame
+print("\nLast few rows of the DataFrame:")
+print(df.tail())
+
+
+
+
 
 
 
