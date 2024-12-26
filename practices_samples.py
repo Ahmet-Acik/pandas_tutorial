@@ -108,10 +108,20 @@ reshaped_df = df_pivot.stack()
 print("\nReshaped DataFrame:")
 print(reshaped_df)
 
-
 # Sorting data
 print("\nSorted DataFrame (by column A):")
 print(df.sort_values(by='A'))
+
+# Applying a function to the DataFrame
+def square(x):
+    return x ** 2
+
+print("\nDataFrame with values squared:")
+print(df.apply(square))
+
+# Applying a function element-wise
+
+
 
 
 
