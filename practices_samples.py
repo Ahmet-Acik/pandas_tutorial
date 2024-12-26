@@ -128,6 +128,17 @@ df['D'] = df['A'] + df['B']
 print("\nDataFrame with new column D:")
 print(df)
 
+# Dropping columns
+df_dropped = df.drop(columns=['B', 'C'])
+print("\nDataFrame after dropping columns B and C:")
+print(df_dropped)
+
+# Renaming columns
+df_renamed = df.rename(columns={'A': 'Column1', 'B': 'Column2'})
+print("\nDataFrame with renamed columns:")
+print(df_renamed)
+
+
 
 
 
