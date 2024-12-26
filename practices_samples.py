@@ -160,7 +160,13 @@ print(df.shape)
 print("\nColumn names of the DataFrame:")
 print(df.columns)
 
+# Displaying the index of the DataFrame
+print("\nIndex of the DataFrame:")
+print(df.index)
 
+# Displaying the values of the DataFrame
+print("\nValues of the DataFrame:")
+print(df.values)
 
 
 
