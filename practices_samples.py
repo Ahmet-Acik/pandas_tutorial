@@ -103,7 +103,14 @@ melted_df = pd.melt(df_pivot.reset_index(), id_vars=['A'], value_vars=['one', 't
 print("\nMelted DataFrame:")
 print(melted_df)
 
-# keep going with more practice!
+# Reshaping data (example with dummy data)
+reshaped_df = df_pivot.stack()
+print("\nReshaped DataFrame:")
+print(reshaped_df)
+
+
+
+
 
 
 
