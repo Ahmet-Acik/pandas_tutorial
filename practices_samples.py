@@ -138,6 +138,14 @@ df_renamed = df.rename(columns={'A': 'Column1', 'B': 'Column2'})
 print("\nDataFrame with renamed columns:")
 print(df_renamed)
 
+# Saving DataFrame to a CSV file
+df.to_csv('./output_data/output.csv', index=False)
+
+# Saving DataFrame to an Excel file
+df.to_excel('./output_data/output.xlsx', index=False)
+
+
+
 
 
 
