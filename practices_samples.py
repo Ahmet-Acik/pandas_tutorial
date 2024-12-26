@@ -109,7 +109,9 @@ print("\nReshaped DataFrame:")
 print(reshaped_df)
 
 
-
+# Sorting data
+print("\nSorted DataFrame (by column A):")
+print(df.sort_values(by='A'))
 
 
 
