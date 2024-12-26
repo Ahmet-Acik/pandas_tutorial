@@ -120,6 +120,14 @@ print("\nDataFrame with values squared:")
 print(df.apply(square))
 
 # Applying a function element-wise
+print("\nDataFrame with values squared (element-wise):")
+print(df.applymap(square))
+
+# Creating a new column based on existing columns
+df['D'] = df['A'] + df['B']
+print("\nDataFrame with new column D:")
+print(df)
+
 
 
 
